@@ -125,7 +125,7 @@ public class Login extends Baseclass
 				// Click ON LOGIN.
 				driver.findElement(By.cssSelector(prop.getProperty("inSideLogin"))).click();
 				
-				// Error message print 
+				// Error message display 
 				 boolean Display = driver.findElement(By.xpath(prop.getProperty("LoginEroormsg"))).isDisplayed();
 				System.out.println("Element displayed is :"+Display);
 		 }
