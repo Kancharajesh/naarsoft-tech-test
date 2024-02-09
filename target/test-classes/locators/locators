@@ -1,0 +1,60 @@
+
+browser=chrome
+Website=https://katalon-demo-cura.herokuapp.com/
+
+
+
+MakeAppointment=a[id='btn-make-appointment']
+
+MenuToggle=a[id='menu-toggle']
+	//MenuToggle Home.
+MenuToggleHome=Home
+	//MenuToggle Login.
+MenuToggleLogin=Login
+
+	//Userid.
+Username=input[id='txt-username']
+UsernameId=John Doe
+
+	//Password.
+Password=input[id='txt-password']
+PasswordId=ThisIsNotAPassword
+
+
+inSideLogin=button[id='btn-login']
+LoginEroormsg=Login failed! Please ensure the username and password are valid.
+
+	//After Login.
+Facility=select[id='combo_facility']
+TokyoCURAHealthcareCenter=Tokyo CURA Healthcare Center
+HongkongCURAHealthcareCenter=Hongkong CURA Healthcare Center
+SeoulCURAHealthcareCenter=option[value='Seoul CURA Healthcare Center']
+
+	//Check Box.
+checKbox=input[type='checkbox']
+Checkboxclick=input[id='chk_hospotal_readmission']
+
+	//Healthcare Program.
+Medicare=(//input[@name='programs'])[1]
+Medicaid=(//input[@name='programs'])[2]
+None=(//input[@name='programs'])[3]
+
+	//Visit Date (Required).
+Datepicker=input[name='visit_date']
+Datepickertitle=th[class='datepicker-switch']
+
+	//Next & previous.
+Calenderprevious=(//th[@class='prev'])[1]
+calendernext=(//th[@class='next'])[1]
+
+
+	//Comment.
+comment=textarea[id='txt_comment']
+commenttext=Dear [Name],I want to request an appointment to discuss [briefly mention the purpose]. Are you available on [Date] at [Time] at [Address]? If not, please suggest an alternative time that suits you.
+
+Book-appointment=button[id='btn-book-appointment']
+
+	//select top right three-dot.
+ClickonThreedotoption=i[class='fa fa-bars']
+	
+logout=//*[@id="sidebar-wrapper"]/ul/li[5]/a
