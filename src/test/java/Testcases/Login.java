@@ -120,7 +120,7 @@ public class Login extends Baseclass
 				
 				// ENTER USERID & PASSWORD.
 				driver.findElement(By.cssSelector(prop.getProperty("Username"))).sendKeys(prop.getProperty("UsernameId"));
-				driver.findElement(By.cssSelector(prop.getProperty("Password"))).sendKeys(prop.getProperty("PasswordId1"));
+				driver.findElement(By.cssSelector(prop.getProperty("Password"))).sendKeys(prop.getProperty("invalidpassword"));
 				
 				// Click ON LOGIN.
 				driver.findElement(By.cssSelector(prop.getProperty("inSideLogin"))).click();
