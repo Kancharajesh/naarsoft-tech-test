@@ -111,4 +111,23 @@ public class Login extends Baseclass
 		
 		 }
 
+		 @Test(priority = 3,enabled = true)
+		 public static void Errormessgae() throws IOException, Exception
+		 {
+			 
+			//Click on MakeAppointment.
+				driver.findElement(By.cssSelector(prop.getProperty("MakeAppointment"))).click();
+				
+				// ENTER USERID & PASSWORD.
+				driver.findElement(By.cssSelector(prop.getProperty("Username"))).sendKeys(prop.getProperty("UsernameId"));
+				driver.findElement(By.cssSelector(prop.getProperty("Password"))).sendKeys(prop.getProperty("PasswordId1"));
+				
+				// Click ON LOGIN.
+				driver.findElement(By.cssSelector(prop.getProperty("inSideLogin"))).click();
+				
+				// Error message print 
+				 boolean Display = driver.findElement(By.xpath(prop.getProperty("LoginEroormsg"))).isDisplayed();
+				System.out.println("Element displayed is :"+Display);
+		 }
+
 }
