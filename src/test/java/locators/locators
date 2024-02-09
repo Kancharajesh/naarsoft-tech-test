@@ -19,6 +19,7 @@ UsernameId=John Doe
 	//Password.
 Password=input[id='txt-password']
 PasswordId=ThisIsNotAPassword
+invalidpassword=123456
 
 
 inSideLogin=button[id='btn-login']
