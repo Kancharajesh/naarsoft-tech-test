@@ -23,9 +23,10 @@ invalidpassword=123456
 
 
 inSideLogin=button[id='btn-login']
-LoginEroormsg=Login failed! Please ensure the username and password are valid.
+LoginEroormsg=//*[@id="login"]/div/div/div[1]/p[2]
 
 	//After Login.
+F1=//*[@id="appointment"]/div/div/form/div[1]/div
 Facility=select[id='combo_facility']
 TokyoCURAHealthcareCenter=Tokyo CURA Healthcare Center
 HongkongCURAHealthcareCenter=Hongkong CURA Healthcare Center

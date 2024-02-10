@@ -5,7 +5,7 @@
     <classes>
       <class name="Testcases.Login">
         <methods>
-          <include name="login"/>
+          <include name="login1"/>
           <include name="closeser"/>
           <include name="setup"/>
         </methods>
